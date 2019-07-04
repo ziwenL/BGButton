@@ -12,4 +12,10 @@
 <p>布局代码示例</p>
 <img src="https://github.com/ziwenL/BGButton/blob/master/readme/images/readme_code_demonstration.png?raw=true"/>
 </body>
+<br/>
+<h3>使用方法</h3>
+<h5>第一种：</h5>
+<p>直接copy本项目libary中widget包下的BGButton类、res-values文件夹下的attrs.xml、res-animator文件夹下的selector_bg_button_animator.xml到您的项目</p>
+ <h5>第二种：</h5>
+ <p>依赖</p>
 <html>
