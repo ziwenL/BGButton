@@ -17,5 +17,18 @@
 <h5>第一种：</h5>
 <p>直接copy本项目libary中widget包下的BGButton类、res-values文件夹下的attrs.xml、res-animator文件夹下的selector_bg_button_animator.xml到您的项目</p>
  <h5>第二种：</h5>
- <p>依赖</p>
+ <p>根目录build.gradle下添加
+  <br/>
+ allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+ <br/>
+ module的build.gradle下添加
+  dependencies {
+	        implementation 'com.github.ziwenL:BGButton:v1.0'
+	}
+ </p>
 <html>
