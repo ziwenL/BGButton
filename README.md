@@ -7,7 +7,9 @@
 <p>入侵性低，只有一个类、一个动画和一个styleable，代码注释清晰，可自行调整，可直接替换原项目里的Button控件，建议直接copy使用</p>
 <p>如果能为您带来一些帮助，是我的荣幸</p>
  <br/>
-<h1>显示效果</h1>
-<img align="center" src="https://github.com/ziwenL/BGButton/blob/master/readme/images/readme_demonstration.gif?raw=true" />
+<h3>显示效果</h3>
+<img src="https://github.com/ziwenL/BGButton/blob/master/readme/images/readme_demonstration.gif?raw=true" />
+<p>布局代码示例</p>
+<img src="https://github.com/ziwenL/BGButton/blob/master/readme/images/readme_code_demonstration.png?raw=true"/>
 </body>
 <html>
