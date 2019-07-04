@@ -11,24 +11,20 @@
 <img src="https://github.com/ziwenL/BGButton/blob/master/readme/images/readme_demonstration.gif?raw=true" />
 <p>布局代码示例</p>
 <img src="https://github.com/ziwenL/BGButton/blob/master/readme/images/readme_code_demonstration.png?raw=true"/>
-</body>
 <br/>
 <h3>使用方法</h3>
-<h5>第一种：</h5>
+<h5>第一种：（建议使用）</h5>
 <p>直接copy本项目libary中widget包下的BGButton类、res-values文件夹下的attrs.xml、res-animator文件夹下的selector_bg_button_animator.xml到您的项目</p>
  <h5>第二种：</h5>
- <p>根目录build.gradle下添加
+ <p>根目录build.gradle的allprojects——repositories中添加
   <br/>
- allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+<div class="highlight highlight-source-groovy-gradle"><pre>  <span class="pl-s"><span class="pl-pds"></span>maven { url 'https://jitpack.io' }<span class="pl-pds"></span></span></pre></div>
+ </p>
  <br/>
  module的build.gradle下添加
-  dependencies {
-	        implementation 'com.github.ziwenL:BGButton:v1.0'
-	}
+<div class="highlight highlight-source-groovy-gradle"><pre> implementation <span class="pl-s"><span class="pl-pds">'</span>com.github.ziwenL:BGButton:v1.0<span class="pl-pds">'</span></span></pre></div>
  </p>
+ 
+ <p>更多的使用效果可参考demo，代码量不多，基本都有注释。感谢您的支持。</p>
+ </body>
 <html>
