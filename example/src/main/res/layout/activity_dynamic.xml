@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ziwen.library.widget.BGButton
+        android:id="@+id/btn_example"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="BGButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="确定"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_example" />
+
+    <CheckBox
+        android:id="@+id/cb_change_enabled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="切换为不可点击样式"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_confirm" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@+id/btn_example">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <TextView
+                android:id="@+id/tv_background_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="背景色设置"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/cb_background_color_gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用渐变色背景"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_background_color_gradient" />
+
+            <TextView
+                android:id="@+id/tv_background_color_gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="渐变背景色"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_background_color" />
+
+            <TextView
+                android:id="@+id/tv_background_color_gradient_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="startColor"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_background_color_gradient" />
+
+            <com.ziwen.bgbutton.widgets.ColorPickerView
+                android:id="@+id/cpv_background_start"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#ffffff"
+                app:indicatorColor="#ffffff"
+                app:indicatorEnable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_background_color_gradient_start"
+                app:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/tv_background_color_gradient_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="endColor"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cpv_background_start" />
+
+            <com.ziwen.bgbutton.widgets.ColorPickerView
+                android:id="@+id/cpv_background_end"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#ffffff"
+                app:indicatorColor="#ffffff"
+                app:indicatorEnable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_background_color_gradient_end"
+                app:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/tv_background_color_single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="单一背景色"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cpv_background_end" />
+
+            <com.ziwen.bgbutton.widgets.ColorPickerView
+                android:id="@+id/cpv_background"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#ffffff"
+                app:indicatorColor="#ffffff"
+                app:indicatorEnable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_background_color_single"
+                app:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/tv_background_color_unable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="不可点击时背景色"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cpv_background" />
+
+            <com.ziwen.bgbutton.widgets.ColorPickerView
+                android:id="@+id/cpv_background_unable"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#ffffff"
+                app:indicatorColor="#ffffff"
+                app:indicatorEnable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_background_color_unable" />
+
+            <TextView
+                android:id="@+id/tv_pressed_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="按压色设置"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cpv_background_unable" />
+
+            <CheckBox
+                android:id="@+id/cb_auto_pressed_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="根据背景色设置默认按压色"
+                android:textSize="12sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_pressed_color"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <com.ziwen.bgbutton.widgets.ColorPickerView
+                android:id="@+id/cpv_pressed"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff"
+                app:indicatorColor="#ffffff"
+                app:indicatorEnable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_pressed_color"
+                app:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/tv_radius_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="圆角设置(dp)"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cpv_pressed" />
+
+            <EditText
+                android:id="@+id/et_top_left_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="topLeftRadius"
+                android:inputType="number"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_radius_tips" />
+
+            <EditText
+                android:id="@+id/et_top_right_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="topRightRadius"
+                android:inputType="number"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_radius_tips" />
+
+            <EditText
+                android:id="@+id/et_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="radius"
+                android:inputType="number"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@id/et_top_right_radius"
+                app:layout_constraintStart_toEndOf="@+id/et_top_left_radius"
+                app:layout_constraintTop_toBottomOf="@id/tv_radius_tips" />
+
+
+            <EditText
+                android:id="@+id/et_bottom_left_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="bottomLeftRadius"
+                android:inputType="number"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_top_left_radius" />
+
+            <EditText
+                android:id="@+id/et_bottom_right_radius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="bottomRightRadius"
+                android:inputType="number"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_top_left_radius" />
+
+            <TextView
+                android:id="@+id/tv_stroke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="描边设置"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_bottom_left_radius" />
+
+            <TextView
+                android:id="@+id/tv_stroke_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="描边颜色"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_stroke" />
+
+            <com.ziwen.bgbutton.widgets.ColorPickerView
+                android:id="@+id/cpv_stroke"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="#ffffff"
+                app:indicatorColor="#ffffff"
+                app:indicatorEnable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_stroke_color"
+                app:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/tv_stroke_color_pressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="按压时描边颜色"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cpv_stroke" />
+
+            <com.ziwen.bgbutton.widgets.ColorPickerView
+                android:id="@+id/cpv_stroke_pressed"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="#ffffff"
+                app:indicatorColor="#ffffff"
+                app:indicatorEnable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_stroke_color_pressed"
+                app:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/tv_stroke_color_enabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="不可点击时描边颜色"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cpv_stroke_pressed" />
+
+            <com.ziwen.bgbutton.widgets.ColorPickerView
+                android:id="@+id/cpv_stroke_unable"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="#ffffff"
+                app:indicatorColor="#ffffff"
+                app:indicatorEnable="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_stroke_color_enabled"
+                app:orientation="horizontal" />
+
+
+            <EditText
+                android:id="@+id/et_stroke_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="描边宽度(dp)"
+                android:inputType="number"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cpv_stroke_unable"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_stroke_color" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

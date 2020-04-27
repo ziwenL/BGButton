@@ -2,22 +2,32 @@
 <resources>
 
     <declare-styleable name="BGButton">
+        <!--圆角值-->
+        <attr name="radius" format="dimension" />
         <attr name="bottomLeftRadius" format="dimension" />
         <attr name="bottomRightRadius" format="dimension" />
         <attr name="topLeftRadius" format="dimension" />
         <attr name="topRightRadius" format="dimension" />
-        <attr name="radius" format="dimension" />
+        <!--背景色-->
         <attr name="backgroundColor" format="color" />
-        <attr name="strokeColor" format="color" />
+        <!--描边宽度-->
         <attr name="strokeWidth" format="dimension" />
+        <!--描边色-->
+        <attr name="strokeColor" format="color" />
+        <!--按压时描边色-->
         <attr name="pressedStrokeColor" format="color" />
-        <attr name="unClickStrokeColor" format="color" />
+        <!--不可点击时描边色-->
+        <attr name="unableStrokeColor" format="color" />
+        <!--按压时填充色-->
         <attr name="pressedColor" format="color" />
-        <attr name="unClickColor" format="color" />
+        <!--不可点击时填充色-->
+        <attr name="unableColor" format="color" />
         <!--渐变色-->
         <attr name="backgroundColorStart" format="color" />
         <attr name="backgroundColorEnd" format="color" />
         <!--图片背景-->
         <attr name="backgroundDrawable" format="reference" />
+        <!--是否显示按压阴影效果-->
+        <attr name="showShadow" format="boolean" />
     </declare-styleable>
 </resources>
