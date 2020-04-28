@@ -3,14 +3,14 @@
 <p>　　支持在布局中直接设置圆角、渐变色、描边、按压色等属性的自定义Button，同时保留了按压阴影效果</p>
 <p>　　旨在减少创建shape/selector资源以达到节省开发时间的目的</p>
 
-##显示效果
+<h3>显示效果</h3>
 <img  src="https://github.com/ziwenL/BGButton/blob/master/readme/images/example_dynamic.gif?raw=true" alt="xml中静态设置属性" />
 <p >xml中静态设置属性</p>
 <img src="https://github.com/ziwenL/BGButton/blob/master/readme/images/example_dynamic.gif?raw=true" alt="代码中动态设置属性"/>
 <p >代码中动态设置属性</p>
 
 
-##自定义属性
+<h3>自定义属性</h3>
 
 |name|format|description|
 |:---:|:---:|:---:|
@@ -31,7 +31,7 @@
 | unableStrokeColor | color |设置不可点击时描边颜色
 | pressedStrokeColor |color| 设置按压时描边颜色
 
-##使用方法
+<h3>使用方法</h3>
 <h5>第一种：（建议使用）</h5>
 <p>直接copy本项目libary中widget包下的BGButton类、res-values文件夹下的attrs.xml、res-animator文件夹下的selector_bg_button_animator.xml到您的项目</p>
  <h5>第二种：</h5>
