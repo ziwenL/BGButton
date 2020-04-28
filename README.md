@@ -27,6 +27,15 @@
 | strokeColor | color |设置描边颜色
 | unableStrokeColor | color |设置不可点击时描边颜色
 | pressedStrokeColor |color| 设置按压时描边颜色
+| tl_iconWidth |dimension| 设置icon宽度(仅支持CommonTabLayout)
+| tl_iconHeight |dimension|设置icon高度(仅支持CommonTabLayout)
+| tl_iconVisible |boolean| 设置icon是否可见(仅支持CommonTabLayout)
+| tl_iconGravity |enum| 设置icon显示位置,对应Gravity中常量值,左上右下(仅支持CommonTabLayout)
+| tl_iconMargin |dimension| 设置icon与文字间距(仅支持CommonTabLayout)
+| tl_indicator_anim_enable |boolean| 设置显示器支持动画(only for CommonTabLayout)
+| tl_indicator_anim_duration |integer| 设置显示器动画时间(only for CommonTabLayout)
+| tl_indicator_bounce_enable |boolean| 设置显示器支持动画回弹效果(only for CommonTabLayout)
+| tl_indicator_width_equal_title |boolean| 设置显示器与标题一样长(only for SlidingTabLayout)
 
 <h3>使用方法</h3>
 <h5>第一种：（建议使用）</h5>
