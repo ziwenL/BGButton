@@ -3,12 +3,12 @@
 <p>　　支持在布局中直接设置圆角、渐变色、描边、按压色等属性的自定义Button，同时保留了按压阴影效果</p>
 <p>　　旨在减少创建shape/selector资源以达到节省开发时间的目的</p>
 
-<h3 align="center">显示效果</h3>
-<img  src="https://github.com/ziwenL/BGButton/blob/master/readme/images/example_dynamic.gif?raw=true" alt="xml中静态设置属性" align="cente"/>
-<p align="center">xml中静态设置属性</p>
-<img src="https://github.com/ziwenL/BGButton/blob/master/readme/images/example_dynamic.gif?raw=true" alt="代码中动态设置属性" align="cente"/>
-<p align="center">代码中动态设置属性</p>
-<h3 align="center" >自定义属性</h3>
+<h3>显示效果</h3>
+<img  src="https://github.com/ziwenL/BGButton/blob/master/readme/images/example_dynamic.gif?raw=true" alt="xml中静态设置属性" />
+<p >xml中静态设置属性</p>
+<img src="https://github.com/ziwenL/BGButton/blob/master/readme/images/example_dynamic.gif?raw=true" alt="代码中动态设置属性"/>
+<p >代码中动态设置属性</p>
+<h3 >自定义属性</h3>
 
 |name|format|description|
 |:---:|:---:|:---:|
