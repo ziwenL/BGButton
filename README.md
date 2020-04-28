@@ -4,7 +4,7 @@
 <p>　　旨在减少创建shape/selector资源以达到节省开发时间的目的</p>
 
 <h3>显示效果</h3>
-<img  src="https://github.com/ziwenL/BGButton/blob/master/readme/images/example_dynamic.gif?raw=true" alt="xml中静态设置属性" />
+<img  src="https://github.com/ziwenL/BGButton/blob/master/readme/images/example_static.gif?raw=true" alt="xml中静态设置属性" />
 <p >xml中静态设置属性</p>
 <img src="https://github.com/ziwenL/BGButton/blob/master/readme/images/example_dynamic.gif?raw=true" alt="代码中动态设置属性"/>
 <p >代码中动态设置属性</p>
